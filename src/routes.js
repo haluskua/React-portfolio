@@ -1,9 +1,18 @@
 import React from "react";
-import Layout from './Hoc/Layout';
+import Layout from "./Hoc/Layout";
+import { Switch, Route } from "react-router-dom";
+
+import Home from './Components/Header_footer/home';
+
 const Routes = (props) => {
   return (
-    <Layout>second line</Layout>
-  )
+    <Layout>
+      <Switch>
+        <Route exact component={Home} path="/"/>
+      
+      </Switch>
+    </Layout>
+  );
 };
 
 export default Routes;
