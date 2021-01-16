@@ -1,0 +1,83 @@
+
+
+/*=============================
+            FEATURED
+===============================*/
+
+.featured_wrapper {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 100vw;
+    margin: 0 auto;
+    height: 100vh;
+   
+   @include tablet {
+       justify-content: center;
+       
+   } 
+    @include laptop {
+        justify-content: center;
+        margin-left: 35rem;
+        width: 1280px;
+    }
+}
+.name {
+    margin: 0 1rem;
+}
+
+.featured_stripes {
+    position: relative
+}
+.featured_text {
+    position: relative;
+    font-family: 'Righteous', cursive;
+}
+
+
+.featured_stripes .stripe{
+    width: 92px;
+    height:1200px;
+    position: absolute;
+    @include tablet {
+        width: 92px;
+    } 
+    @include laptop{
+       width: 92px;
+    }
+
+}
+
+
+
+.featured_number {
+    font-size: 270px;
+    color: #ffffff;
+    transform: translate(260px,170px);
+    position: absolute;
+}
+
+.featured_player {
+    width: 500px;
+    height: 500px;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    position: absolute;
+}
+.featured_first {
+    position: absolute;
+    background: #0e1731;
+    color: #ffffff;
+    font-size: 92px;
+    text-transform: uppercase;
+    padding: 0px 20px;
+}
+
+.featured_second {
+    position: absolute;
+    background: #0e1731;
+    color: #ffffff;
+    font-size: 92px;
+    text-transform: uppercase;
+    padding: 0px 20px;
+}
