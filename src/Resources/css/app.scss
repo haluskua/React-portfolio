@@ -1,4 +1,39 @@
+
+$maincolor: #98c5e9;
+
+
+
+@mixin mobile {
+    @media only screen and (device-width: 1rem),
+    screen and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin tablet{
+     @media only screen and (min-width: 640px) and (orientation: portrait) {
+        @content;
+    }
+} 
+
+@mixin laptop{
+    @media only screen and (min-width: 1280px) and (orientation: landscape){
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media only screen and (min-width: 2200px) and (orientation:landscape){
+        @content;
+    }
+}
+
+
+
 body {
+    @include mobile {
+        background: orange;
+    }
     margin:0;
     padding:0;
     font-family: 'Roboto', sans-serif;
@@ -14,11 +49,17 @@ a {
 }
 
 .bck_blue {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    background: #0d1831;
+}
+.bck_blue_featured{
     background: #0d1831;
 }
 
 .bck_lblue {
-    background: #98c5e9;
+    background: $maincolor;
 }
 
 .img_cover {
@@ -67,7 +108,7 @@ button {
 }
 
 .success_label {
-    color: #98c5e9;
+    color: $maincolor;
     font-weight: 600;
     margin: 10px 0px;
 }
@@ -145,7 +186,7 @@ footer {
     text-align: center;
     font-size: 16px;
     color: #ffffff;
-    padding: 30px 0px;
+    padding: 30px 0px
 }
 
 footer .img_cover{
@@ -162,11 +203,25 @@ footer .footer_discl {
 ===============================*/
 
 .featured_wrapper {
-    margin: 0 auto;
-    width: 1280px;
-    margin-top: 90px;
-    height: 800px;
+    display: flex;
+    justify-content: flex-start;
     overflow: hidden;
+    width: 100vw;
+    margin: 0 auto;
+    height: 100vh;
+   
+   @include tablet {
+       justify-content: center;
+       
+   } 
+    @include laptop {
+        justify-content: center;
+        margin-left: 35rem;
+        width: 1280px;
+    }
+}
+.name {
+    margin: 0 1rem;
 }
 
 .featured_stripes {
@@ -178,10 +233,17 @@ footer .footer_discl {
 }
 
 
-.featured_stripes .stripe {
-    width: 230px;
-    height: 1200px;
+.featured_stripes .stripe{
+    width: 92px;
+    height:1200px;
     position: absolute;
+    @include tablet {
+        width: 92px;
+    } 
+    @include laptop{
+       width: 92px;
+    }
+
 }
 
 
@@ -223,7 +285,7 @@ footer .footer_discl {
 ===============================*/
 
 .home_matches_wrapper {
-    background: #98c5e9;
+    background: $maincolor;
     margin-top:9px;
     padding: 50px 0px;
 }
