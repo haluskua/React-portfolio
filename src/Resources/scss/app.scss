@@ -42,6 +42,7 @@ a {
 }
 .bck_blue_featured{
     background: #0d1831;
+    @include bcg-one;
 }
 
 .bck_lblue {

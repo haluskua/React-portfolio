@@ -22,4 +22,14 @@
     @media only screen and (min-width: 2200px) and (orientation:landscape){
         @content;
     }
+
+}
+
+
+
+@mixin bcg-one {
+    background: url('../images/honey1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
