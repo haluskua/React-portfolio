@@ -19,7 +19,7 @@
    } 
     @include laptop {
         justify-content: center;
-        margin-left: 35rem;
+        // margin-left: 35rem;
         width: 1280px;
     }
 }
@@ -46,40 +46,92 @@
     @include laptop{
        width: 92px;
     }
-
 }
 
-
-
 .featured_number {
-    font-size: 100px;
-    right: 11rem;
+    font-size: 2.741em;
+    right: 3rem;
     color: #a82e2e;
-    transform: translate(260px,170px);
+    line-height: 2.38rem;
+    transform: translate(260px, 170px);
     position: absolute;
+    top: 1%;
+    z-index: 1;
+    @include tablet {
+        font-size: 6.5rem;
+        line-height: 5.58rem;
+        top: 3%;
+    }
+    @include laptop {
+        font-size: 7.1rem;
+        line-height: 6rem;
+        width: 100%;
+        position: relative;
+        top: 4%;
+    }
+    @include desktop {
+    }
 }
 
 .featured_player {
-    width: 500px;
-    height: 500px;
+    width: 418px;
+    height: 418px;
     background-size: contain !important;
     background-repeat: no-repeat !important;
     position: absolute;
+    right: 5rem;
+    top: -8%;
+    
 }
 .featured_first {
     position: absolute;
     background: #0e1731;
     color: #ffffff;
-    font-size: 92px;
+    font-size: 45px;
     text-transform: uppercase;
-    padding: 0px 20px;
+    left: -17rem;
+    top: -21%;
+    padding: 0.5rem;
+    text-align: center;
+    width: auto;
+    @include tablet {
+        top: -4%;
+        font-size: 57px;
+        padding: 1.07rem;
+        left: -32rem;
+        
+    }
+    @include laptop {
+        top: -8%;
+        font-size: 4.5rem;
+        display: flex;
+        justify-self: center;
+        padding: 1.1rem;
+        left: -1rem;
+    }
 }
 
 .featured_second {
+    z-index: 1;
     position: absolute;
     background: #0e1731;
     color: #ffffff;
-    font-size: 92px;
+    font-size: 43px;
     text-transform: uppercase;
     padding: 0px 20px;
+    top: -210px;
+    left: -272px;
+    width: auto;
+    @include tablet {
+        top: -6%;
+        font-size: 5rem;
+        margin-left: -243px;
+    
+    }
+    @include laptop {
+        font-size: 89px;
+        padding: 0px 20px;
+        top: -177px;
+        left: 122px;
+    }
 }
