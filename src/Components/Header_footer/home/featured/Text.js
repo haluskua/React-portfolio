@@ -23,7 +23,7 @@ class Text extends Component {
             className="featured_number"
             style={{
               opacity,
-              transform: `translate(260px, 170px) rotateY(${rotate}deg)`,
+              transform: `translate(0px, 170px) rotateY(${rotate}deg)`,
             }}
           >
             Omphalus Kua
@@ -32,20 +32,51 @@ class Text extends Component {
       }}
     </Animate>
   );
+   
+  animateTitle = () => (
+    <Animate
+      show={true}
+      start={{
+        opacity: 0,
+        rotate: 0,
+      }}
+      enter={{
+        opacity: [1],
+        rotate: [360],
+        timing: { delay: 1100, duration: 500, ease: easePolyOut },
+      }}
+    >
+      {({ opacity, rotate }) => {
+        return (
+          <div
+            className="title"
+            style={{
+              opacity,
+              transform: `translate(0px, 190px) rotateY(${rotate}deg),`,
+            }}
+          >
+            FullStack Developer
+          </div>
+        );
+      }}
+    </Animate>
+  );
+  
+  
 
   animateFirst = () => (
     <Animate
       show={true}
       start={{
         opacity: 0,
-        x: 503,
-        y: 450,
+        x: 333,
+        y: 550,
       }}
       enter={{
         opacity: [1],
-        x: [273],
-        y: [450],
-        timing: { duration: 500, ease: easePolyOut },
+        x: [2],
+        y: [300],
+        timing: {delay: 300, duration: 500, ease: easePolyOut },
       }}
     >
       {({ opacity, x, y }) => {
@@ -69,13 +100,13 @@ class Text extends Component {
       show={true}
       start={{
         opacity: 0,
-        x: 503,
-        y: 586,
+        x: 123,
+        y: 226,
       }}
       enter={{
         opacity: [1],
-        x: [273],
-        y: [586],
+        x: [2],
+        y: [304],
         timing: { delay: 300, duration: 500, ease: easePolyOut },
       }}
     >
@@ -104,48 +135,19 @@ class Text extends Component {
       enter={{
         opacity: [1],
 
-        timing: { delay: 800, duration: 500, ease: easePolyOut },
+        timing: { delay: 600, duration: 1000, ease: easePolyOut },
       }}
     >
-      {({ opacity, x, y }) => {
+      {({ opacity }) => {
         return (
           <div
             className="featured_logo"
             style={{
               opacity,
               background: `url(${FeaturedLogo})`,
-              transform: `translate(550px,201px)`,
+              transform: `translate(157px,16px)`,
             }}
           ></div>
-        );
-      }}
-    </Animate>
-  );
-
-  animateTitle = () => (
-    <Animate
-      show={true}
-      start={{
-        opacity: 0,
-        rotate: 0,
-      }}
-      enter={{
-        opacity: [1],
-        rotate: [360],
-        timing: { delay: 1100, duration: 500, ease: easePolyOut },
-      }}
-    >
-      {({ opacity, rotate }) => {
-        return (
-          <div
-            className="title"
-            style={{
-              opacity,
-              transform: `translate(260px, 170px) rotateY(${rotate}deg),`,
-            }}
-          >
-            FullStack Developer
-          </div>
         );
       }}
     </Animate>
