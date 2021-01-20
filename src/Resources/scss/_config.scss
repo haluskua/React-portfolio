@@ -1,29 +1,120 @@
 
+// @mixin mobile {
+//     @media only screen and (min-device-width: 480px)
+//      and (max-device-width: landscape) {
+//         @content;
+//     }
+// }
+
 @mixin mobile {
-    @media only screen and (device-width: 1rem),
-    screen and (orientation: landscape) {
+    @media only screen and ( min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
         @content;
+        /* for portrait layouts */
+    }
+}
+
+@mixin mobile-landscape {
+    @media only screen and ( min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        @content;
+        /* for portrait layouts */
     }
 }
 
 @mixin tablet{
-     @media only screen and (min-width: 640px) and (orientation: portrait) {
+     @media only screen and (min-device-width: 760px) and (orientation: portrait) {
         @content;
     }
 } 
+@mixin tablet-landscape { 
+    @media only screen and (min-device-width: 1024px) and (orientation: landscape) {
+        @content;
+    }
+}
+
 
 @mixin laptop{
-    @media only screen and (min-width: 1280px) and (orientation: landscape){
+    @media only screen and (min-device-width: 1024px) and (orientation: landscape){
         @content;
     }
 }
 
 @mixin desktop {
-    @media only screen and (min-width: 2200px) and (orientation:landscape){
+    @media only screen and (min-device-width: 1280px) and (orientation:landscape){
         @content;
     }
 
 }
+
+
+@mixin Mac2000 {
+        @media screen and (min-device-width: 2000px) {
+            @content;
+            /* for sumo sized (mac) screens */
+            
+        }
+    }
+
+/*-------------------------------------8888888----------------------------------------*/
+
+
+
+
+
+// @mixin laptop {
+//     @media only screen and (min-device-width: 960px){
+//         @content;
+//         /* styles for browsers larger than 960px */
+        
+//     }
+// }
+
+// @mixin desktop {
+//     @media only screen and ( min-device-width: 1440px){
+//         @content;
+//         /* styles for browsers larger than 1440px; */
+        
+//     }
+// }
+
+// @mixin Mac2000 {
+//     @media screen and (min-device-width: 2000px) {
+//         @content;
+//         /* for sumo sized (mac) screens */
+        
+//     }
+// }
+
+// @mixin under480 {
+//     @media screen and (min-device-width: 480px) {
+//         @content;
+//         /* styles for mobile browsers smaller than 480px; (iPhone)*/
+        
+//     }
+// }
+
+// @mixin tablet {
+//     @media only screen and (device-width: 768px){
+//         @content; 
+//         /* default iPad screens */
+//     }
+// }
+
+// @mixin mobile {
+//     @media only screen and ( min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+//         @content;
+//         /* for portrait layouts */
+//     }
+// }
+
+// @mixin tablet-landscape {
+//     @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape){
+//         @content;
+//         /* Fort landscape layouts only*/        
+//     }
+//     }
+
+
+
 
 @mixin bcg-one {
     background: url('../images/pink.jpg');

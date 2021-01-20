@@ -25,6 +25,7 @@
     margin: 0 1rem;
 }
 
+
 .featured_stripes {
     position: relative
 }
@@ -54,12 +55,16 @@
 }
 
 .featured_number {
-    font-size: 2.74em;
+    font-size: 2.31em;
     right: 3rem;
-    color: #a82e2e;
-    line-height: 2.38rem;
+    color: $maindark;
+    line-height: 2.538rem;
     top: -3%;
     z-index: 1;
+    @include mobile-landscape {
+        transform: translate(0px, 100px) !important;
+        font-size: 2em !important; 
+     }
     @include tablet {
         font-size: 3.8rem;
         line-height: 5.58rem;
@@ -86,8 +91,11 @@
     transform: translate(8px, 175px);
     right: 1rem;
     z-index: 1;
+    @include mobile-landscape {
+        transform: translate(8px, 104px) !important;
+    }
     @include tablet {
-        color: #0e1731;
+        color: $maindark;
         font-size: 1.73rem;
         margin-top: -8px;
     }
@@ -101,15 +109,19 @@
 }
 
 .featured_logo {
-    width: 61%;
-    height: 61%;
+    width: 58%;
+    height: 58%;
+    transform: translate(132px, 36px) !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
+    @include mobile-landscape {
+        transform: translate(217px, -51px) !important;
+        width: 44% !important;
+        height: 44% !important;
+    }
     @include tablet {
-        width: 50%;
-        height: 50%;
-        margin-left: 15rem;
-        margin-top: -7rem;
+        height: 39%;
+        transform: translate(332px, -114px) !important;
     }
     
     @include laptop {
@@ -120,13 +132,21 @@
     }
 }
 .featured_first {
-    background: #0e1731;
+    background: $maindark;
     color: #ffffff;
-    font-size: 45px;
+    font-size: 37px;
     text-transform: uppercase;;
     padding: 0.5rem;
     text-align: center;
-    width: 140px;
+    width: 125px;
+    
+    @include mobile-landscape {
+        transform:  translate(3px, 136px) !important;
+        font-size: 26px;
+        padding: 0.3rem;
+        width: 85px;
+    }
+
     @include tablet {
         top: -4%;
         font-size: 57px;
@@ -146,18 +166,25 @@
 }
 
 .featured_second {
-    background: #0e1731;
+    background: $maindark;
     color: #ffffff;
-    font-size: 45px;
+    font-size: 39px;
     text-transform: uppercase;;
     padding: 0.5rem;
     text-align: center;
-    width: 80%;
+    width: 91%;
+    
+    @include mobile-landscape {
+        transform:  translate(3px, 136px) !important;
+        font-size: 30px;
+        width: 38%;
+    }
     @include tablet {
         top: -6%;
         font-size: 4rem;
         letter-spacing: 0.3rem;
         margin: 0;
+        width: 69%;
     
     }
     @include laptop {

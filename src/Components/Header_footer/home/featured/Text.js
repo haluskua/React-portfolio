@@ -43,7 +43,7 @@ class Text extends Component {
       enter={{
         opacity: [1],
         rotate: [360],
-        timing: { delay: 1100, duration: 500, ease: easePolyOut },
+        timing: { delay: 720, duration: 400, ease: easePolyOut },
       }}
     >
       {({ opacity, rotate }) => {
@@ -69,13 +69,13 @@ class Text extends Component {
       show={true}
       start={{
         opacity: 0,
-        x: 333,
+        x: -223,
         y: 550,
       }}
       enter={{
         opacity: [1],
         x: [2],
-        y: [300],
+        y: [310],
         timing: {delay: 300, duration: 500, ease: easePolyOut },
       }}
     >
@@ -101,12 +101,12 @@ class Text extends Component {
       start={{
         opacity: 0,
         x: 123,
-        y: 226,
+        y: 36,
       }}
       enter={{
         opacity: [1],
         x: [2],
-        y: [304],
+        y: [306],
         timing: { delay: 300, duration: 500, ease: easePolyOut },
       }}
     >

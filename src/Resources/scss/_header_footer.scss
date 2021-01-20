@@ -3,19 +3,31 @@
             HEADER FOOTER
 ===============================*/
 
+
+.MuiToolbar-regular {
+    @include mobile-landscape {
+        min-height: 50px;;
+    }
+}
+
+.MuiAppBar-colorPrimary {
+    @include mobile-landscape {
+        padding: 1px !important;
+    }
+}
+
 footer {
     font-size: 12px;
     padding: 9px 0;
     text-align: center;
-    color: #ffffff;
-    @include tablet {
-        font-size: 16px;
-        padding: 30px 0px
-    }
+    color: rgb(255, 255, 255);
+
 }
 
 footer .img_cover{
    margin:0 auto;
+   
+   
 }
 
 footer .footer_discl {
