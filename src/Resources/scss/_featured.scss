@@ -70,7 +70,10 @@
         line-height: 5.58rem;
         top: 2%;
     }
-    
+    @include tablet-landscape {
+        transform: translate(-200px, 95px) !important;
+        font-size: 3rem !important;
+    } 
     @include laptop {
         font-size: 5.5rem;
         line-height: 6rem;
@@ -99,10 +102,13 @@
         font-size: 1.73rem;
         margin-top: -8px;
     }
+    @include tablet-landscape {
+        transform: translate(6px, 117px) !important;
+        font-size: 1.6rem !important;
+    }
     @include laptop {
         // padding-top: 1rem;
         color: white;
-        transform: translate(668px, 272px) !important;
         font-size: 2.5rem;
         
     }
@@ -122,6 +128,9 @@
     @include tablet {
         height: 39%;
         transform: translate(332px, -114px) !important;
+    }
+    @include tablet-landscape {
+        margin-left: 215px !important;
     }
     
     @include laptop {
@@ -152,8 +161,20 @@
         font-size: 57px;
         padding: 1.07rem;
         left: -32rem;
-        
     }
+
+    @include tablet-landscape {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        text-align: center !important;
+        padding: 04px !important;
+        font-size: 3.6em !important; 
+        transform: translate(6px, 285px) !important; 
+    }
+    
+    
+    
     @include laptop {
         top: -8%;
         font-size: 4.5rem;
@@ -161,7 +182,7 @@
         justify-self: center;
         padding: 1.1rem;
         left: -1rem;
-        transform: translate(466px, 300px) !important;
+        // transform: translate(466px, 300px) !important;
     }
 }
 
@@ -180,12 +201,17 @@
         width: 38%;
     }
     @include tablet {
-        top: -6%;
         font-size: 4rem;
         letter-spacing: 0.3rem;
         margin: 0;
-        width: 69%;
+        width: 59%;
     
+    }
+    
+    @include tablet-landscape {
+        transform: translate(6px, 285px) !important; 
+        font-size: 3.6em !important;
+        
     }
     @include laptop {
         font-size: 89px;
@@ -193,7 +219,7 @@
         top: -177px;
         left: 122px;
         width: 582px;
-        transform: translate(466px, 300px) !important;
+        // transform: translate(466px, 300px) !important;
         
     }
 }
