@@ -110,7 +110,7 @@
         // padding-top: 1rem;
         color: white;
         font-size: 2.5rem;
-        
+        transform: translate(24px, 117px) !important;
     }
 }
 
@@ -136,8 +136,8 @@
     @include laptop {
         margin-left: 55rem;
         transform: translate(127px, -90px) !important;
-        width: 35%;
-        height: 35%;
+        width: 32% !important;
+        height: 32% !important;
     }
 }
 .featured_first {
