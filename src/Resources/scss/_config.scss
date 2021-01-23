@@ -7,18 +7,46 @@
 // }
 
 @mixin mobile {
-    @media only screen and ( min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+    @media only screen and ( min-device-width: 336px) and (max-device-width: 414px) and (orientation:portrait) {
         @content;
         /* for portrait layouts */
     }
 }
 
 @mixin mobile-landscape {
-    @media only screen and ( min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    @media only screen and ( min-device-width: 481px) and (max-device-width: 667px) and (orientation:landscape) {
         @content;
         /* for portrait layouts */
     }
 }
+@mixin iPhon5 {
+    @media screen and (max-device-width: 568px) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin iPhone6 {
+    @media screen and (min-device-width: 736px) and (orientation: landscape) {
+        @content;
+    }
+}
+// @mixin iPhoneX {
+//     @media screen and (max-device-width: 812px) and (orientation: landscape) {
+//         @content;
+//     }
+// }
+
+@mixin Pixel {
+    @media only screen and (min-device-width: 731px) and (max-device-width: 823px) and (orientation:landscape) {
+        @content; 
+    }
+}
+@mixin Pixel2 {
+    @media only screen and (min-device-width: 823px)  and (orientation:landscape) {
+        @content; 
+    }
+}
+
 
 @mixin tablet{
      @media only screen and (min-device-width: 760px) and (orientation: portrait) {
@@ -31,15 +59,28 @@
     }
 }
 
+// @mixin iPadPro {
+//     @media screen and  (min-device-width: 1024) and (orientation: portrait) {
+//         @content;
+        
+//     }
+// }
+// @mixin iPadPro-landscape {
+//     @media screen and  (min-device-width: 1366px) and (orientation: landscape) {
+//         @content;
+        
+//     }
+// }
+
 
 @mixin laptop{
-    @media only screen and (min-device-width: 1024px) and (orientation: landscape){
+    @media only screen and (min-device-width: 1024px) and (orientation: portrait){
         @content;
     }
 }
 
 @mixin desktop {
-    @media only screen and (min-device-width: 1280px) and (orientation:landscape){
+    @media only screen and (min-device-width: 1366px) and (orientation:landscape){
         @content;
     }
 

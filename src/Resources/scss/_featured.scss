@@ -36,6 +36,11 @@
     @include tablet {
         padding-top: 3rem;
     }
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
@@ -46,12 +51,16 @@
     @include tablet {
         width: 92px;
     } 
-    @include laptop {
-        height: 100vh;
-        top: 2% !important;
-        width: 105px;
-        
+    
+    @include tablet {
+        top: -3% !important;
+        width: 105px;       
     }
+    @include tablet-landscape {
+        top: 0% !important;
+        width: 105px;   
+    } 
+
 }
 
 .featured_number {
@@ -61,19 +70,48 @@
     line-height: 2.538rem;
     top: -3%;
     z-index: 1;
-    @include mobile-landscape {
-        transform: translate(0px, 100px) !important;
-        font-size: 2em !important; 
-     }
+    
+    // @include Pixel {
+    //     transform: translate(82px, 95px) !important;
+    //     color: orange;
+    // }
+    @include iPhon5 {
+        font-size: 1.5rem;
+        transform: translate(2px, 95px) !important;
+    }
+    @include iPhone6  {  
+        font-size: 1.5rem;
+        transform: translate(2px, 93px) !important;
+    }
+    @include Pixel {
+        transform: translate(6px, 101px) !important;
+    }
+    @include Pixel2 {
+        color: purple;
+        
+    }
+
+    // @include iPhoneX {
+    //     transform: translate(2px, 25px) !important;
+    //     color: green;
+    // }
     @include tablet {
         font-size: 3.8rem;
         line-height: 5.58rem;
         top: 2%;
     }
     @include tablet-landscape {
-        transform: translate(-200px, 95px) !important;
-        font-size: 3rem !important;
+        transform: translate(82px, 195px) !important;
+        font-size: 2.4rem !important;
     } 
+    
+    // @include iPadPro {
+    //     color: yellow;
+    // }
+    // @include iPadPro {
+    //     color: red;
+    // }
+    
     @include laptop {
         font-size: 5.5rem;
         line-height: 6rem;
@@ -81,6 +119,10 @@
         position: relative;
         top: 4%;
         left: 21%;
+    }
+    @include desktop {
+        top: -2%;
+        left: 43%;
     }
 
 }
@@ -96,6 +138,11 @@
     z-index: 1;
     @include mobile-landscape {
         transform: translate(8px, 104px) !important;
+        
+    }
+    @include iPhon5 {
+        transform: translate(4px, 90px) !important;
+        
     }
     @include tablet {
         color: $maindark;
@@ -103,14 +150,21 @@
         margin-top: -8px;
     }
     @include tablet-landscape {
-        transform: translate(6px, 117px) !important;
+        transform: translate(82px, 205px) !important;
         font-size: 1.6rem !important;
+        color: rgb(12, 10, 6);
     }
     @include laptop {
         // padding-top: 1rem;
         color: white;
         font-size: 2.5rem;
         transform: translate(24px, 117px) !important;
+    }
+    @include desktop {
+        color: #221012;
+        transform: translate(206px, 117px) !important;
+        font-size: 1.45rem !important;
+        letter-spacing: 0.15rem;
     }
 }
 
@@ -130,7 +184,8 @@
         transform: translate(332px, -114px) !important;
     }
     @include tablet-landscape {
-        margin-left: 215px !important;
+        transform: translate(412px, -114px) !important;
+        
     }
     
     @include laptop {
@@ -138,6 +193,12 @@
         transform: translate(127px, -90px) !important;
         width: 32% !important;
         height: 32% !important;
+    }
+    @include desktop {
+        transform: translate(-498px, -20px) !important;
+        width: 78% !important;
+        height: 56% !important;
+        
     }
 }
 .featured_first {
@@ -150,10 +211,14 @@
     width: 125px;
     
     @include mobile-landscape {
-        transform:  translate(3px, 136px) !important;
+        transform:  translate(3px, 186px) !important;
         font-size: 26px;
         padding: 0.3rem;
         width: 85px;
+    }
+    @include iPhon5 {
+        transform:  translate(3px, 136px) !important;
+        
     }
 
     @include tablet {
@@ -170,11 +235,9 @@
         text-align: center !important;
         padding: 04px !important;
         font-size: 3.6em !important; 
-        transform: translate(6px, 285px) !important; 
-    }
-    
-    
-    
+        transform: translate(84px, 285px) !important;
+
+    } 
     @include laptop {
         top: -8%;
         font-size: 4.5rem;
@@ -183,6 +246,12 @@
         padding: 1.1rem;
         left: -1rem;
         // transform: translate(466px, 300px) !important;
+    }
+    @include desktop {
+        transform: translate(200px, 285px) !important;
+        padding: 1rem !important;
+        color: orange;
+        
     }
 }
 
@@ -196,22 +265,24 @@
     width: 91%;
     
     @include mobile-landscape {
-        transform:  translate(3px, 136px) !important;
+        transform:  translate(3px, 185px) !important;
         font-size: 30px;
         width: 38%;
+    }
+    @include iPhon5 {
+        transform: translate(3px, 135px) !important;
     }
     @include tablet {
         font-size: 4rem;
         letter-spacing: 0.3rem;
         margin: 0;
         width: 59%;
-    
     }
     
     @include tablet-landscape {
-        transform: translate(6px, 285px) !important; 
-        font-size: 3.6em !important;
-        
+        transform: translate(84px, 285px) !important;
+        font-size: 3.6em;
+        width: 51%;  
     }
     @include laptop {
         font-size: 89px;
@@ -220,6 +291,9 @@
         left: 122px;
         width: 582px;
         // transform: translate(466px, 300px) !important;
+    }
+    @include desktop {
+        transform: translate(200px, 285px) !important; 
         
     }
 }
