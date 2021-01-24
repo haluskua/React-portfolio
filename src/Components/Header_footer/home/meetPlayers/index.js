@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Stripes from "../../../../Resources/images/stripes.png";
 import { Tag } from "../../Ui/misc";
 import Reveal from "react-reveal/Reveal";
-import HomeCards from './cards'
+import HomeCards from './cards';
 
 class MeetPlayers extends Component {
   state = {
