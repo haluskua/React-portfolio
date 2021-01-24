@@ -38,7 +38,7 @@
 }
 .match_block .match_wrapper .match_top .left .team_name,
 .match_block .match_wrapper .match_bottom .left .team_name {
-    font-size: 30px;
+    font-size: 15px;
     padding: 6px 10px;
 }
 
@@ -46,11 +46,15 @@
 .match_block .match_wrapper .match_top .right,
 .match_block .match_wrapper .match_bottom .right { 
     background: #0e1731;
-    width: 70px;
+    width: auto;
     color: #ffffff;
-    font-size: 50px;
+    font-size: 24px;
     text-align: center;
-    padding-top: 6px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 } 
 
 .match_box_big {
@@ -154,7 +158,7 @@
 .home_meetplayers .home_card_wrapper {
     position: relative;
     float: left;
-    width: 630px;
+    width: 100%;
     min-height: 600px;
 }
 
