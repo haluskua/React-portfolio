@@ -14,15 +14,15 @@ class HomeCards extends Component {
         cards: [
             {
                 bottom: 90,
-                left: 300
-            },
-            {
-                bottom: 60,
                 left: 200
             },
             {
+                bottom: 60,
+                left: 140
+            },
+            {
                 bottom: 30,
-                left: 100
+                left: 70
             },
             {
                 bottom: 0,

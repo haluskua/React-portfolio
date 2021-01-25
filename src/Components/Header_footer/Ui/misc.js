@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Tag = (props) => {
   const template = (
-    <div
+    <div className="tag-props"
       style={{
         background: props.bck,
         fontSize: props.size,

@@ -167,6 +167,13 @@
     width: 390px;
 }
 
+.tag-props {
+    color: red !important;
+    
+    
+}
+
+
 /*=============================
             MATCHES BLOCK
 ===============================*/
@@ -175,7 +182,7 @@
 .player_card_wrapper {
     background: #ffffff;
     border: 1px solid #ececec;
-    width: 300px;
+    width: 157px;
     padding: 10px 10px 20px 10px;
     font-family: 'Righteous';
 }
@@ -193,9 +200,10 @@
 }
 .player_card_wrapper .player_card_number {
     color: #d6ecfe;
-    font-size: 185px;
+    font-size: 92px;
     text-align: right;
     line-height: 160px;
+    padding-bottom: 20px;
 }
 
 .player_card_wrapper .player_card_name {
@@ -205,7 +213,7 @@
 
 .player_card_wrapper .player_card_name span { 
     display: block;
-    font-size: 25px;
+    font-size: 20px;
     color: #0d1831;
 }
 

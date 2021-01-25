@@ -36,13 +36,13 @@ class MeetPlayers extends Component {
 
               <div className="home_text_wrapper">
                 <div>
-                  <Tag
+                  <Tag className="tag_player"
                     bck="#0e1731"
-                    size="100px"
+                    size="66px"
                     color="#ffffff"
                     add={{
                       display: "inline-block",
-                      marginBottom: "20px",
+                      marginBottom: "8px",
                     }}
                   >
                     Meet
@@ -52,11 +52,12 @@ class MeetPlayers extends Component {
                 <div>
                   <Tag
                     bck="#0e1731"
-                    size="100px"
+                    size="66px"
                     color="#ffffff"
                     add={{
                       display: "inline-block",
-                      marginBottom: "20px",
+                      marginBottom: "8px",
+
                     }}
                   >
                     The
@@ -66,11 +67,11 @@ class MeetPlayers extends Component {
                 <div>
                   <Tag
                     bck="#0e1731"
-                    size="100px"
+                    size="66px"
                     color="#ffffff"
                     add={{
                       display: "inline-block",
-                      marginBottom: "20px",
+                      marginBottom: "8px",
                     }}
                   >
                     Players
@@ -87,7 +88,7 @@ class MeetPlayers extends Component {
                   linkto="/the_team"
                   add={{
                     display: "inline-block",
-                    marginBottom: "20px",
+                    marginBottom: "8px",
                     border: "1px solid #0e1731",
                   }}
                 >
